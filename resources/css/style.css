@@ -145,6 +145,13 @@ header ul li a {
   flex-direction: row;
   justify-items: space-between;
   align-items: center;
+  transition: background-color 500ms ease-out 200ms;
+}
+
+#orientation:hover,
+#campus:hover,
+#guest:hover {
+  background-color: lightgrey;
 }
 
 #orientation .img,
@@ -180,4 +187,75 @@ header ul li a {
 .description a {
   text-decoration: none;
   color: steelblue;
+}
+
+.section3 {
+  background-color: lightgrey;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 1.6rem 3.6rem;
+}
+
+.section3 .title {
+  margin-bottom: 1.6rem;
+}
+
+.section3 .courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+#row1,
+#row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-shrink: 1;
+  text-align: left;
+  max-width: 100%;
+}
+
+#row1 {
+  margin-bottom: 1.6rem;
+}
+
+#engineering,
+#art,
+#design,
+#data,
+#business,
+#marketing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 32%;
+}
+
+.course-desc {
+  background-color: white;
+  padding: .8rem 1.2rem .8rem .8rem;
+  height: 100%;
+}
+
+.course-desc h4 {
+  font-weight: 300;
+  margin-top: 0.4rem;
+}
+
+#engineering img,
+#art img,
+#design img,
+#data img,
+#business img,
+#marketing img {
+  max-width: 100%;
+  height: auto;
 }
