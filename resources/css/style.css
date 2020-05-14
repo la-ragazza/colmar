@@ -6,6 +6,8 @@ html {
   text-align: center;
 }
 
+/* Header */
+
 header {
   top: 0;
   display: flex;
@@ -46,6 +48,8 @@ header ul li a {
   color: darkslategrey;
   padding-left: 0.8rem;
 }
+
+/* Section 1 */
 
 .section1 {
   top: 0;
@@ -89,6 +93,8 @@ header ul li a {
   justify-content: space-between;
 }
 
+/*Section 2 */
+
 .section2 {
   top: 0;
   width: 100%;
@@ -126,12 +132,17 @@ header ul li a {
   margin-bottom: 1.2rem;
 }
 
-.right2 {
+.right2,
+#right4 {
   top: 0;
   max-width: 40%;
   margin-top: -0.8rem; /* To compensate for img margin */
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
+  
+}
+
+.right2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -140,7 +151,9 @@ header ul li a {
 
 #orientation,
 #campus,
-#guest {
+#guest,
+#fisma,
+#now {
   display: flex;
   flex-direction: row;
   justify-items: space-between;
@@ -150,13 +163,17 @@ header ul li a {
 
 #orientation:hover,
 #campus:hover,
-#guest:hover {
+#guest:hover,
+#fisma:hover,
+#now:hover {
   background-color: lightgrey;
 }
 
 #orientation .img,
 #campus .img,
-#guest .img {
+#guest .img,
+#fisma .img,
+#now .img {
   margin: .8rem;
   width: 35%;
   height: auto;
@@ -164,14 +181,18 @@ header ul li a {
 
 #orientation .img img,
 #campus .img img,
-#guest .img img {
+#guest .img img,
+#fisma .img img,
+#now .img img {
   max-width: 100%;
   min-width: 100%;
 }
 
 #orientation .description,
 #campus .description,
-#guest .description {
+#guest .description,
+#fisma .description,
+#now .description {
   width: 65%;
 }
 
@@ -189,18 +210,24 @@ header ul li a {
   color: steelblue;
 }
 
-.section3 {
-  background-color: lightgrey;
+/* Section 3 */
+
+.section3,
+.section4 {
+  top: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-  padding: 1.6rem 3.6rem;
 }
 
-.section3 .title {
-  margin-bottom: 1.6rem;
+.section3 {
+  background-color: lightgrey;
+}
+
+.title {
+  margin: 1.6rem 0;
 }
 
 .section3 .courses {
@@ -208,7 +235,8 @@ header ul li a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  
+  max-width: 100%;  
+  padding: 0 3.6rem 1.6rem 3.6rem;
 }
 
 #row1,
@@ -216,10 +244,9 @@ header ul li a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  
   flex-shrink: 1;
   text-align: left;
-  max-width: 100%;
 }
 
 #row1 {
@@ -234,14 +261,16 @@ header ul li a {
 #marketing {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 32%;
+  max-width: 31%;
+  padding: 0;
+  margin: 0;
 }
 
 .course-desc {
   background-color: white;
-  padding: .8rem 1.2rem .8rem .8rem;
+  padding: .8rem 0.8rem 0 .8rem;
   height: 100%;
 }
 
@@ -259,3 +288,51 @@ header ul li a {
   max-width: 100%;
   height: auto;
 }
+
+/* Section 4
+Flex and width line 215 */
+
+.section4 {
+  border-bottom: 1px solid lightgrey;
+  overflow: hidden;
+}
+
+.section4 .content {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 0 0 1.6rem 1.2rem;
+  width: 100%;
+  top: 0;
+}
+
+#left4 {
+  width: 60%;
+  top: 0;
+  margin-right: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0;
+}
+
+#vid-thesis {
+  max-width: 100%;
+  height: auto;
+}
+
+#left4 div h3 {
+  margin: 1.2rem 0 .4rem 0;
+}
+
+#right4 { /*margins specified line 135 */
+  width: 40%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  text-align: left;
+}
+
